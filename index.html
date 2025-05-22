@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio Profissional</title>
+   <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Portfólio</h1>
+  </header>
+
+  <main class="container" role="main">
+    <section class="photo-section" aria-label="Foto pessoal">
+ 
+      <img src="/img/IMG_20250422_113848.jpg" alt="Foto minha mostrando rosto e sorriso" tabindex="0" />
+           <p id="namewriter">Ravi Albano</p>
+    </section>
+
+    <section class="content-section" aria-label="Seções do portfólio">
+      <nav class="tabs" role="tablist" aria-label="Navegação das seções do portfólio">
+        <button class="tab active" role="tab" aria-selected="true" aria-controls="tab-about" id="tab-about-btn" tabindex="0">Sobre mim</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="tab-skills" id="tab-skills-btn" tabindex="-1">Habilidades</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="tab-projects" id="tab-projects-btn" tabindex="-1">Projetos</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="tab-courses" id="tab-courses-btn" tabindex="-1">Cursos</button>
+      </nav>
+
+      <div id="tab-about" class="tab-content active" role="tabpanel" aria-labelledby="tab-about-btn" tabindex="0">
+        <h2>Sobre mim</h2>
+        <p>
+          Sempre gostei de tecnologia, comecei a estudar desenvolvimento web e me apaixonei pela parte visual e pela interação com o usuário. Estou buscando minha primeira oportunidade para aplicar o que venho aprendendo.
+        </p>
+      </div>
+
+      <div id="tab-skills" class="tab-content" role="tabpanel" aria-labelledby="tab-skills-btn" tabindex="0">
+        <h2>Habilidades</h2>
+        <ul class="skills-list" aria-label="Lista das habilidades técnicas">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+        </ul>
+      </div>
+
+      <div id="tab-projects" class="tab-content" role="tabpanel" aria-labelledby="tab-projects-btn" tabindex="0">
+        <h2>Meus Projetos</h2>
+        <ul class="featured-projects" aria-label="Projetos em destaque">
+          <li><a href="https://github.com/Ravialbano/projeto_mahbiju" target="_blank" rel="noopener noreferrer">Mahbiju</a></li>
+          <li><a href="https://github.com/Ravialbano/projeto_green_eyes" target="_blank" rel="noopener noreferrer">Green Eyes</a></li>
+          <li><a href="https://github.com/Ravialbano/projeto_site" target="_blank" rel="noopener noreferrer">Green City</a></li>
+        </ul>
+        <button class="btn-github" onclick="goToGithub()" aria-label="Ver mais projetos no GitHub">Ver mais projetos no GitHub</button>
+      </div>
+
+      <div id="tab-courses" class="tab-content" role="tabpanel" aria-labelledby="tab-courses-btn" tabindex="0">
+        <h2>Cursos</h2>
+        <ul class="skills-list" aria-label="Lista de cursos realizados">
+          <li><a href="https://www.udemy.com/share/1093CC3@MC74ALi-d2c2P_iWFxjJgMh3HyYh0iJrzUG93Zsz_JJRdCU7SPeNtZMeh1_ASSbwQA==/" target="_blank" rel="noopener noreferrer">Curso de formação completa front-end - Udemy</a></li>
+          <li><a href="https://www.coursera.org/learn/google-data-analytics-capstone/home/module/1" target="_blank" rel="noopener noreferrer">Curso de Analise de Dados - Coursera</a></li>
+          <li>Curso em video - Gustavo Guanabara</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2024 Meu Portfólio Profissional. Todos os direitos reservados.
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>
